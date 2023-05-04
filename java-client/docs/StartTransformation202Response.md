@@ -1,0 +1,24 @@
+
+
+# StartTransformation202Response
+
+
+## Properties
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**id** | **String** | ID of the new project output. |  [optional] |
+|**status** | [**StatusEnum**](#StatusEnum) | The status of the transformation. |  [optional] |
+
+
+
+## Enum: StatusEnum
+
+| Name | Value |
+|---- | -----|
+| TRANSFORMING | &quot;transforming&quot; |
+| DONE | &quot;done&quot; |
+| ERROR | &quot;error&quot; |
+
+
+
