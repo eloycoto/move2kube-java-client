@@ -1,3 +1,3 @@
-<manifest package="com.konveyor.move" xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest package="dev.parodos.move2kube" xmlns:android="http://schemas.android.com/apk/res/android">
     <application />
 </manifest>

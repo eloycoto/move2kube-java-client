@@ -18,12 +18,12 @@ Get the graph of the transformers used while creating the output with the given 
 ### Example
 ```java
 // Import classes:
-import com.konveyor.move.ApiClient;
-import com.konveyor.move.ApiException;
-import com.konveyor.move.Configuration;
-import com.konveyor.move.auth.*;
-import com.konveyor.move.models.*;
-import com.konveyor.move.api.ProjectOutputGraphsApi;
+import dev.parodos.move2kube.ApiClient;
+import dev.parodos.move2kube.ApiException;
+import dev.parodos.move2kube.Configuration;
+import dev.parodos.move2kube.auth.*;
+import dev.parodos.move2kube.models.*;
+import dev.parodos.move2kube.api.ProjectOutputGraphsApi;
 
 public class Example {
   public static void main(String[] args) {

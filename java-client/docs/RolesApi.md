@@ -22,12 +22,12 @@ Create a new role.
 ### Example
 ```java
 // Import classes:
-import com.konveyor.move.ApiClient;
-import com.konveyor.move.ApiException;
-import com.konveyor.move.Configuration;
-import com.konveyor.move.auth.*;
-import com.konveyor.move.models.*;
-import com.konveyor.move.api.RolesApi;
+import dev.parodos.move2kube.ApiClient;
+import dev.parodos.move2kube.ApiException;
+import dev.parodos.move2kube.Configuration;
+import dev.parodos.move2kube.auth.*;
+import dev.parodos.move2kube.models.*;
+import dev.parodos.move2kube.api.RolesApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -92,12 +92,12 @@ Delete an existing role.
 ### Example
 ```java
 // Import classes:
-import com.konveyor.move.ApiClient;
-import com.konveyor.move.ApiException;
-import com.konveyor.move.Configuration;
-import com.konveyor.move.auth.*;
-import com.konveyor.move.models.*;
-import com.konveyor.move.api.RolesApi;
+import dev.parodos.move2kube.ApiClient;
+import dev.parodos.move2kube.ApiException;
+import dev.parodos.move2kube.Configuration;
+import dev.parodos.move2kube.auth.*;
+import dev.parodos.move2kube.models.*;
+import dev.parodos.move2kube.api.RolesApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -161,12 +161,12 @@ Get the role with the given ID.
 ### Example
 ```java
 // Import classes:
-import com.konveyor.move.ApiClient;
-import com.konveyor.move.ApiException;
-import com.konveyor.move.Configuration;
-import com.konveyor.move.auth.*;
-import com.konveyor.move.models.*;
-import com.konveyor.move.api.RolesApi;
+import dev.parodos.move2kube.ApiClient;
+import dev.parodos.move2kube.ApiException;
+import dev.parodos.move2kube.Configuration;
+import dev.parodos.move2kube.auth.*;
+import dev.parodos.move2kube.models.*;
+import dev.parodos.move2kube.api.RolesApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -231,12 +231,12 @@ Get all the roles.
 ### Example
 ```java
 // Import classes:
-import com.konveyor.move.ApiClient;
-import com.konveyor.move.ApiException;
-import com.konveyor.move.Configuration;
-import com.konveyor.move.auth.*;
-import com.konveyor.move.models.*;
-import com.konveyor.move.api.RolesApi;
+import dev.parodos.move2kube.ApiClient;
+import dev.parodos.move2kube.ApiException;
+import dev.parodos.move2kube.Configuration;
+import dev.parodos.move2kube.auth.*;
+import dev.parodos.move2kube.models.*;
+import dev.parodos.move2kube.api.RolesApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -296,12 +296,12 @@ Update a role. The role will be created if it doesn&#39;t exist.
 ### Example
 ```java
 // Import classes:
-import com.konveyor.move.ApiClient;
-import com.konveyor.move.ApiException;
-import com.konveyor.move.Configuration;
-import com.konveyor.move.auth.*;
-import com.konveyor.move.models.*;
-import com.konveyor.move.api.RolesApi;
+import dev.parodos.move2kube.ApiClient;
+import dev.parodos.move2kube.ApiException;
+import dev.parodos.move2kube.Configuration;
+import dev.parodos.move2kube.auth.*;
+import dev.parodos.move2kube.models.*;
+import dev.parodos.move2kube.api.RolesApi;
 
 public class Example {
   public static void main(String[] args) {

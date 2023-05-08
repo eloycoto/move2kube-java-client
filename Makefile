@@ -6,4 +6,4 @@ download-openapi:
 
 generate: download-openapi
 	rm -rf java-client
-	docker run --rm -u $(USER):$(GROUP) -v $(PWD):/local -e GENERATE_PERMISSIONS=true openapitools/openapi-generator-cli generate -i /local/openapi.json -g java -o /local/java-client  --invoker-package com.konveyor.move --model-package com.konveyor.move.client.model --api-package com.konveyor.move.api
+	docker run --rm -u $(USER):$(GROUP) -v $(PWD):/local -e GENERATE_PERMISSIONS=true openapitools/openapi-generator-cli generate -i /local/openapi.json -g java -o /local/java-client  --invoker-package dev.parodos.move2kube --model-package dev.parodos.move2kube.client.model --api-package dev.parodos.move2kube.api

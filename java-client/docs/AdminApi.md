@@ -18,12 +18,12 @@ Get an access token using client ID and client secret (for use with trusted clie
 ### Example
 ```java
 // Import classes:
-import com.konveyor.move.ApiClient;
-import com.konveyor.move.ApiException;
-import com.konveyor.move.Configuration;
-import com.konveyor.move.auth.*;
-import com.konveyor.move.models.*;
-import com.konveyor.move.api.AdminApi;
+import dev.parodos.move2kube.ApiClient;
+import dev.parodos.move2kube.ApiException;
+import dev.parodos.move2kube.Configuration;
+import dev.parodos.move2kube.auth.*;
+import dev.parodos.move2kube.models.*;
+import dev.parodos.move2kube.api.AdminApi;
 
 public class Example {
   public static void main(String[] args) {

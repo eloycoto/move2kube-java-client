@@ -2,7 +2,7 @@
 
 Move2Kube API
 - API version: v1.0.0
-  - Build date: 2023-05-08T11:54:01.358451Z[Etc/UTC]
+  - Build date: 2023-05-08T11:56:51.198411Z[Etc/UTC]
 
 This is a documentation of the Move2Kube REST API.
 All API calls expect the `Authorization: Bearer <access-token>` HTTP header unless specified otherwise.
@@ -83,12 +83,12 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```java
 
 // Import classes:
-import com.konveyor.move.ApiClient;
-import com.konveyor.move.ApiException;
-import com.konveyor.move.Configuration;
-import com.konveyor.move.auth.*;
-import com.konveyor.move.models.*;
-import com.konveyor.move.api.AdminApi;
+import dev.parodos.move2kube.ApiClient;
+import dev.parodos.move2kube.ApiException;
+import dev.parodos.move2kube.Configuration;
+import dev.parodos.move2kube.auth.*;
+import dev.parodos.move2kube.models.*;
+import dev.parodos.move2kube.api.AdminApi;
 
 public class Example {
   public static void main(String[] args) {

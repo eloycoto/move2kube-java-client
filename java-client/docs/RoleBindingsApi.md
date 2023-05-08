@@ -21,12 +21,12 @@ Add a role to a user.
 ### Example
 ```java
 // Import classes:
-import com.konveyor.move.ApiClient;
-import com.konveyor.move.ApiException;
-import com.konveyor.move.Configuration;
-import com.konveyor.move.auth.*;
-import com.konveyor.move.models.*;
-import com.konveyor.move.api.RoleBindingsApi;
+import dev.parodos.move2kube.ApiClient;
+import dev.parodos.move2kube.ApiException;
+import dev.parodos.move2kube.Configuration;
+import dev.parodos.move2kube.auth.*;
+import dev.parodos.move2kube.models.*;
+import dev.parodos.move2kube.api.RoleBindingsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -94,12 +94,12 @@ Get all the roles for the given user.
 ### Example
 ```java
 // Import classes:
-import com.konveyor.move.ApiClient;
-import com.konveyor.move.ApiException;
-import com.konveyor.move.Configuration;
-import com.konveyor.move.auth.*;
-import com.konveyor.move.models.*;
-import com.konveyor.move.api.RoleBindingsApi;
+import dev.parodos.move2kube.ApiClient;
+import dev.parodos.move2kube.ApiException;
+import dev.parodos.move2kube.Configuration;
+import dev.parodos.move2kube.auth.*;
+import dev.parodos.move2kube.models.*;
+import dev.parodos.move2kube.api.RoleBindingsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -166,12 +166,12 @@ Remove a role from a user.
 ### Example
 ```java
 // Import classes:
-import com.konveyor.move.ApiClient;
-import com.konveyor.move.ApiException;
-import com.konveyor.move.Configuration;
-import com.konveyor.move.auth.*;
-import com.konveyor.move.models.*;
-import com.konveyor.move.api.RoleBindingsApi;
+import dev.parodos.move2kube.ApiClient;
+import dev.parodos.move2kube.ApiException;
+import dev.parodos.move2kube.Configuration;
+import dev.parodos.move2kube.auth.*;
+import dev.parodos.move2kube.models.*;
+import dev.parodos.move2kube.api.RoleBindingsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -239,12 +239,12 @@ Update the roles of the given user.
 ### Example
 ```java
 // Import classes:
-import com.konveyor.move.ApiClient;
-import com.konveyor.move.ApiException;
-import com.konveyor.move.Configuration;
-import com.konveyor.move.auth.*;
-import com.konveyor.move.models.*;
-import com.konveyor.move.api.RoleBindingsApi;
+import dev.parodos.move2kube.ApiClient;
+import dev.parodos.move2kube.ApiException;
+import dev.parodos.move2kube.Configuration;
+import dev.parodos.move2kube.auth.*;
+import dev.parodos.move2kube.models.*;
+import dev.parodos.move2kube.api.RoleBindingsApi;
 
 public class Example {
   public static void main(String[] args) {
