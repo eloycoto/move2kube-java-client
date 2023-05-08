@@ -18,12 +18,12 @@ Get an access token using client ID and client secret (for use with trusted clie
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.AdminApi;
+import com.konveyor.move.ApiClient;
+import com.konveyor.move.ApiException;
+import com.konveyor.move.Configuration;
+import com.konveyor.move.auth.*;
+import com.konveyor.move.models.*;
+import com.konveyor.move.api.AdminApi;
 
 public class Example {
   public static void main(String[] args) {

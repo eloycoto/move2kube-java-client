@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**description** | **Object** | A human readable error message. |  |
+|**description** | **String** | A human readable error message. |  |
 
 
 

@@ -2296,6 +2296,7 @@
             ],
             "properties": {
               "description": {
+                "type": "string",
                 "description": "A human readable error message.",
                 "example": "failed to create the workspace. Error: ..."
               }
@@ -2353,6 +2354,10 @@
             "type": "string",
             "description": "A human readable name for the workspace.",
             "example": "Team 1 Workspace"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
           },
           "description": {
             "type": "string",

@@ -21,12 +21,12 @@ Delete the current plan for the project.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.PlanApi;
+import com.konveyor.move.ApiClient;
+import com.konveyor.move.ApiException;
+import com.konveyor.move.Configuration;
+import com.konveyor.move.auth.*;
+import com.konveyor.move.models.*;
+import com.konveyor.move.api.PlanApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -92,12 +92,12 @@ Get the plan file.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.PlanApi;
+import com.konveyor.move.ApiClient;
+import com.konveyor.move.ApiException;
+import com.konveyor.move.Configuration;
+import com.konveyor.move.auth.*;
+import com.konveyor.move.models.*;
+import com.konveyor.move.api.PlanApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -166,12 +166,12 @@ Start planning on this project&#39;s inputs.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.PlanApi;
+import com.konveyor.move.ApiClient;
+import com.konveyor.move.ApiException;
+import com.konveyor.move.Configuration;
+import com.konveyor.move.auth.*;
+import com.konveyor.move.models.*;
+import com.konveyor.move.api.PlanApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -238,12 +238,12 @@ Update the plan for this project.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.PlanApi;
+import com.konveyor.move.ApiClient;
+import com.konveyor.move.ApiException;
+import com.konveyor.move.Configuration;
+import com.konveyor.move.auth.*;
+import com.konveyor.move.models.*;
+import com.konveyor.move.api.PlanApi;
 
 public class Example {
   public static void main(String[] args) {

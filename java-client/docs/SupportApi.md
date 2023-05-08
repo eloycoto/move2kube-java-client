@@ -18,12 +18,12 @@ Returns some support information like CLI, API and UI version info.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.SupportApi;
+import com.konveyor.move.ApiClient;
+import com.konveyor.move.ApiException;
+import com.konveyor.move.Configuration;
+import com.konveyor.move.auth.*;
+import com.konveyor.move.models.*;
+import com.konveyor.move.api.SupportApi;
 
 public class Example {
   public static void main(String[] args) {

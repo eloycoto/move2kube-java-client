@@ -1895,6 +1895,7 @@ components:
         name: Team 1 Workspace
         description: This is the workspace for all the projects of team 1.
         id: work-1234
+        timestamp: 2000-01-23T04:56:07.000+00:00
       properties:
         id:
           allOf:
@@ -1905,6 +1906,9 @@ components:
         name:
           description: A human readable name for the workspace.
           example: Team 1 Workspace
+          type: string
+        timestamp:
+          format: date-time
           type: string
         description:
           description: A description about the workspace.
@@ -2189,6 +2193,7 @@ components:
         description:
           description: A human readable error message.
           example: "failed to create the workspace. Error: ..."
+          type: string
       required:
       - description
       type: object

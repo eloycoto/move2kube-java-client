@@ -20,12 +20,12 @@ Delete the output of the project.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ProjectOutputsApi;
+import com.konveyor.move.ApiClient;
+import com.konveyor.move.ApiException;
+import com.konveyor.move.Configuration;
+import com.konveyor.move.auth.*;
+import com.konveyor.move.models.*;
+import com.konveyor.move.api.ProjectOutputsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -93,12 +93,12 @@ Get the output of the project with the given ID.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ProjectOutputsApi;
+import com.konveyor.move.ApiClient;
+import com.konveyor.move.ApiException;
+import com.konveyor.move.Configuration;
+import com.konveyor.move.auth.*;
+import com.konveyor.move.models.*;
+import com.konveyor.move.api.ProjectOutputsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -168,12 +168,12 @@ Start transformation for this project. Planning must be completed before this.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ProjectOutputsApi;
+import com.konveyor.move.ApiClient;
+import com.konveyor.move.ApiException;
+import com.konveyor.move.Configuration;
+import com.konveyor.move.auth.*;
+import com.konveyor.move.models.*;
+import com.konveyor.move.api.ProjectOutputsApi;
 
 public class Example {
   public static void main(String[] args) {
