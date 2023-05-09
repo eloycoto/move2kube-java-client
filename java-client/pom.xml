@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.openapitools</groupId>
-    <artifactId>openapi-java-client</artifactId>
+    <groupId>dev.parodos</groupId>
+    <artifactId>move2kube</artifactId>
     <packaging>jar</packaging>
-    <name>openapi-java-client</name>
+    <name>move2kube</name>
     <version>v1.0.0</version>
     <url>https://github.com/openapitools/openapi-generator</url>
     <description>OpenAPI Java</description>
@@ -29,7 +29,18 @@
             <organization>OpenAPITools.org</organization>
             <organizationUrl>http://openapitools.org</organizationUrl>
         </developer>
-    </developers>
+      </developers>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
