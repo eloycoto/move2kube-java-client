@@ -21,10 +21,13 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import dev.parodos.move2kube.client.model.Project;
+import dev.parodos.move2kube.client.model.ProjectInputsValue;
 import java.io.IOException;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -54,7 +57,7 @@ import dev.parodos.move2kube.JSON;
 /**
  * Workspace
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-08T11:56:51.198411Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-09T11:43:40.367106Z[Etc/UTC]")
 public class Workspace {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -67,6 +70,14 @@ public class Workspace {
   public static final String SERIALIZED_NAME_TIMESTAMP = "timestamp";
   @SerializedName(SERIALIZED_NAME_TIMESTAMP)
   private OffsetDateTime timestamp;
+
+  public static final String SERIALIZED_NAME_PROJECT_IDS = "project_ids";
+  @SerializedName(SERIALIZED_NAME_PROJECT_IDS)
+  private List<String> projectIds;
+
+  public static final String SERIALIZED_NAME_INPUTS = "inputs";
+  @SerializedName(SERIALIZED_NAME_INPUTS)
+  private Map<String, ProjectInputsValue> inputs = new HashMap<>();
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
@@ -145,6 +156,66 @@ public class Workspace {
   }
 
 
+  public Workspace projectIds(List<String> projectIds) {
+    
+    this.projectIds = projectIds;
+    return this;
+  }
+
+  public Workspace addProjectIdsItem(String projectIdsItem) {
+    if (this.projectIds == null) {
+      this.projectIds = new ArrayList<>();
+    }
+    this.projectIds.add(projectIdsItem);
+    return this;
+  }
+
+   /**
+   * Get projectIds
+   * @return projectIds
+  **/
+  @javax.annotation.Nullable
+
+  public List<String> getProjectIds() {
+    return projectIds;
+  }
+
+
+  public void setProjectIds(List<String> projectIds) {
+    this.projectIds = projectIds;
+  }
+
+
+  public Workspace inputs(Map<String, ProjectInputsValue> inputs) {
+    
+    this.inputs = inputs;
+    return this;
+  }
+
+  public Workspace putInputsItem(String key, ProjectInputsValue inputsItem) {
+    if (this.inputs == null) {
+      this.inputs = new HashMap<>();
+    }
+    this.inputs.put(key, inputsItem);
+    return this;
+  }
+
+   /**
+   * Get inputs
+   * @return inputs
+  **/
+  @javax.annotation.Nullable
+
+  public Map<String, ProjectInputsValue> getInputs() {
+    return inputs;
+  }
+
+
+  public void setInputs(Map<String, ProjectInputsValue> inputs) {
+    this.inputs = inputs;
+  }
+
+
   public Workspace description(String description) {
     
     this.description = description;
@@ -210,13 +281,15 @@ public class Workspace {
     return Objects.equals(this.id, workspace.id) &&
         Objects.equals(this.name, workspace.name) &&
         Objects.equals(this.timestamp, workspace.timestamp) &&
+        Objects.equals(this.projectIds, workspace.projectIds) &&
+        Objects.equals(this.inputs, workspace.inputs) &&
         Objects.equals(this.description, workspace.description) &&
         Objects.equals(this.projects, workspace.projects);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, timestamp, description, projects);
+    return Objects.hash(id, name, timestamp, projectIds, inputs, description, projects);
   }
 
   @Override
@@ -226,6 +299,8 @@ public class Workspace {
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
+    sb.append("    projectIds: ").append(toIndentedString(projectIds)).append("\n");
+    sb.append("    inputs: ").append(toIndentedString(inputs)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    projects: ").append(toIndentedString(projects)).append("\n");
     sb.append("}");
@@ -253,6 +328,8 @@ public class Workspace {
     openapiFields.add("id");
     openapiFields.add("name");
     openapiFields.add("timestamp");
+    openapiFields.add("project_ids");
+    openapiFields.add("inputs");
     openapiFields.add("description");
     openapiFields.add("projects");
 
@@ -294,6 +371,10 @@ public class Workspace {
       }
       if (!jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("project_ids") != null && !jsonObj.get("project_ids").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `project_ids` to be an array in the JSON string but got `%s`", jsonObj.get("project_ids").toString()));
       }
       if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));

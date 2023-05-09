@@ -2,7 +2,7 @@
 
 Move2Kube API
 - API version: v1.0.0
-  - Build date: 2023-05-08T11:56:51.198411Z[Etc/UTC]
+  - Build date: 2023-05-09T11:43:40.367106Z[Etc/UTC]
 
 This is a documentation of the Move2Kube REST API.
 All API calls expect the `Authorization: Bearer <access-token>` HTTP header unless specified otherwise.
@@ -177,6 +177,8 @@ Class | Method | HTTP request | Description
  - [GetTokens200Response](docs/GetTokens200Response.md)
  - [PostAnswerToQuestionRequest](docs/PostAnswerToQuestionRequest.md)
  - [Project](docs/Project.md)
+ - [ProjectInputsValue](docs/ProjectInputsValue.md)
+ - [ProjectStatus](docs/ProjectStatus.md)
  - [Role](docs/Role.md)
  - [RoleRulesInner](docs/RoleRulesInner.md)
  - [StartTransformation202Response](docs/StartTransformation202Response.md)

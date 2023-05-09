@@ -18,76 +18,63 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import dev.parodos.move2kube.client.model.ProjectInputsValue;
-import dev.parodos.move2kube.client.model.ProjectStatus;
 import java.io.IOException;
-import java.time.OffsetDateTime;
-import java.util.HashMap;
-import java.util.Map;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 
 /**
- * Model tests for Project
+ * Model tests for ProjectStatus
  */
-public class ProjectTest {
-    private final Project model = new Project();
+public class ProjectStatusTest {
+    private final ProjectStatus model = new ProjectStatus();
 
     /**
-     * Model tests for Project
+     * Model tests for ProjectStatus
      */
     @Test
-    public void testProject() {
-        // TODO: test Project
+    public void testProjectStatus() {
+        // TODO: test ProjectStatus
     }
 
     /**
-     * Test the property 'id'
+     * Test the property 'plan'
      */
     @Test
-    public void idTest() {
-        // TODO: test id
+    public void planTest() {
+        // TODO: test plan
     }
 
     /**
-     * Test the property 'name'
+     * Test the property 'planError'
      */
     @Test
-    public void nameTest() {
-        // TODO: test name
+    public void planErrorTest() {
+        // TODO: test planError
     }
 
     /**
-     * Test the property 'timestamp'
+     * Test the property 'planning'
      */
     @Test
-    public void timestampTest() {
-        // TODO: test timestamp
+    public void planningTest() {
+        // TODO: test planning
     }
 
     /**
-     * Test the property 'status'
+     * Test the property 'reference'
      */
     @Test
-    public void statusTest() {
-        // TODO: test status
+    public void referenceTest() {
+        // TODO: test reference
     }
 
     /**
-     * Test the property 'inputs'
+     * Test the property 'stalePlan'
      */
     @Test
-    public void inputsTest() {
-        // TODO: test inputs
-    }
-
-    /**
-     * Test the property 'description'
-     */
-    @Test
-    public void descriptionTest() {
-        // TODO: test description
+    public void stalePlanTest() {
+        // TODO: test stalePlan
     }
 
 }

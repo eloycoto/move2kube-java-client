@@ -106,6 +106,8 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new dev.parodos.move2kube.client.model.GetTokens200Response.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.parodos.move2kube.client.model.PostAnswerToQuestionRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.parodos.move2kube.client.model.Project.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new dev.parodos.move2kube.client.model.ProjectInputsValue.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new dev.parodos.move2kube.client.model.ProjectStatus.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.parodos.move2kube.client.model.Role.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.parodos.move2kube.client.model.RoleRulesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.parodos.move2kube.client.model.StartTransformation202Response.CustomTypeAdapterFactory());

@@ -1861,9 +1861,24 @@ components:
       type: object
     Project:
       example:
+        inputs:
+          key:
+            name: name
+            description: description
+            normalized_name: normalized_name
+            id: id
+            type: type
+            timestamp: 2000-01-23T04:56:07.000+00:00
         name: Project 23
         description: This is one of the projects that team 1 is working on.
         id: proj-1234
+        timestamp: 2000-01-23T04:56:07.000+00:00
+        status:
+          reference: true
+          planning: true
+          plan_error: true
+          stale_plan: true
+          plan: true
       properties:
         id:
           allOf:
@@ -1875,6 +1890,15 @@ components:
           description: A human readable name for the project.
           example: Project 23
           type: string
+        timestamp:
+          format: date-time
+          type: string
+        status:
+          $ref: '#/components/schemas/Project_status'
+        inputs:
+          additionalProperties:
+            $ref: '#/components/schemas/Project_inputs_value'
+          type: object
         description:
           description: A description about the project.
           example: This is one of the projects that team 1 is working on.
@@ -1886,15 +1910,56 @@ components:
     Workspace:
       example:
         projects:
-        - name: Project 23
+        - inputs:
+            key:
+              name: name
+              description: description
+              normalized_name: normalized_name
+              id: id
+              type: type
+              timestamp: 2000-01-23T04:56:07.000+00:00
+          name: Project 23
           description: This is one of the projects that team 1 is working on.
           id: proj-1234
-        - name: Project 23
+          timestamp: 2000-01-23T04:56:07.000+00:00
+          status:
+            reference: true
+            planning: true
+            plan_error: true
+            stale_plan: true
+            plan: true
+        - inputs:
+            key:
+              name: name
+              description: description
+              normalized_name: normalized_name
+              id: id
+              type: type
+              timestamp: 2000-01-23T04:56:07.000+00:00
+          name: Project 23
           description: This is one of the projects that team 1 is working on.
           id: proj-1234
+          timestamp: 2000-01-23T04:56:07.000+00:00
+          status:
+            reference: true
+            planning: true
+            plan_error: true
+            stale_plan: true
+            plan: true
+        inputs:
+          key:
+            name: name
+            description: description
+            normalized_name: normalized_name
+            id: id
+            type: type
+            timestamp: 2000-01-23T04:56:07.000+00:00
         name: Team 1 Workspace
         description: This is the workspace for all the projects of team 1.
         id: work-1234
+        project_ids:
+        - project_ids
+        - project_ids
         timestamp: 2000-01-23T04:56:07.000+00:00
       properties:
         id:
@@ -1910,6 +1975,14 @@ components:
         timestamp:
           format: date-time
           type: string
+        project_ids:
+          items:
+            type: string
+          type: array
+        inputs:
+          additionalProperties:
+            $ref: '#/components/schemas/Project_inputs_value'
+          type: object
         description:
           description: A description about the workspace.
           example: This is the workspace for all the projects of team 1.
@@ -2196,6 +2269,48 @@ components:
           type: string
       required:
       - description
+      type: object
+    Project_status:
+      example:
+        reference: true
+        planning: true
+        plan_error: true
+        stale_plan: true
+        plan: true
+      properties:
+        plan:
+          type: boolean
+        plan_error:
+          type: boolean
+        planning:
+          type: boolean
+        reference:
+          type: boolean
+        stale_plan:
+          type: boolean
+      type: object
+    Project_inputs_value:
+      example:
+        name: name
+        description: description
+        normalized_name: normalized_name
+        id: id
+        type: type
+        timestamp: 2000-01-23T04:56:07.000+00:00
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        timestamp:
+          format: date-time
+          type: string
+        type:
+          type: string
+        normalized_name:
+          type: string
       type: object
     Role_rules_inner:
       description: A rule is a list of resources and the list of allowed verbs for

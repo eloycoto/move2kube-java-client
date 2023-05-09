@@ -18,30 +18,24 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import dev.parodos.move2kube.client.model.Project;
-import dev.parodos.move2kube.client.model.ProjectInputsValue;
 import java.io.IOException;
 import java.time.OffsetDateTime;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 
 /**
- * Model tests for Workspace
+ * Model tests for ProjectInputsValue
  */
-public class WorkspaceTest {
-    private final Workspace model = new Workspace();
+public class ProjectInputsValueTest {
+    private final ProjectInputsValue model = new ProjectInputsValue();
 
     /**
-     * Model tests for Workspace
+     * Model tests for ProjectInputsValue
      */
     @Test
-    public void testWorkspace() {
-        // TODO: test Workspace
+    public void testProjectInputsValue() {
+        // TODO: test ProjectInputsValue
     }
 
     /**
@@ -61,30 +55,6 @@ public class WorkspaceTest {
     }
 
     /**
-     * Test the property 'timestamp'
-     */
-    @Test
-    public void timestampTest() {
-        // TODO: test timestamp
-    }
-
-    /**
-     * Test the property 'projectIds'
-     */
-    @Test
-    public void projectIdsTest() {
-        // TODO: test projectIds
-    }
-
-    /**
-     * Test the property 'inputs'
-     */
-    @Test
-    public void inputsTest() {
-        // TODO: test inputs
-    }
-
-    /**
      * Test the property 'description'
      */
     @Test
@@ -93,11 +63,27 @@ public class WorkspaceTest {
     }
 
     /**
-     * Test the property 'projects'
+     * Test the property 'timestamp'
      */
     @Test
-    public void projectsTest() {
-        // TODO: test projects
+    public void timestampTest() {
+        // TODO: test timestamp
+    }
+
+    /**
+     * Test the property 'type'
+     */
+    @Test
+    public void typeTest() {
+        // TODO: test type
+    }
+
+    /**
+     * Test the property 'normalizedName'
+     */
+    @Test
+    public void normalizedNameTest() {
+        // TODO: test normalizedName
     }
 
 }

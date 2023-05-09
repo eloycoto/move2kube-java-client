@@ -22,8 +22,10 @@ docs/PlanApi.md
 docs/PostAnswerToQuestionRequest.md
 docs/Project.md
 docs/ProjectInputsApi.md
+docs/ProjectInputsValue.md
 docs/ProjectOutputGraphsApi.md
 docs/ProjectOutputsApi.md
+docs/ProjectStatus.md
 docs/ProjectsApi.md
 docs/QaApi.md
 docs/Role.md
@@ -89,6 +91,8 @@ src/main/java/dev/parodos/move2kube/client/model/GetSupportInfo200Response.java
 src/main/java/dev/parodos/move2kube/client/model/GetTokens200Response.java
 src/main/java/dev/parodos/move2kube/client/model/PostAnswerToQuestionRequest.java
 src/main/java/dev/parodos/move2kube/client/model/Project.java
+src/main/java/dev/parodos/move2kube/client/model/ProjectInputsValue.java
+src/main/java/dev/parodos/move2kube/client/model/ProjectStatus.java
 src/main/java/dev/parodos/move2kube/client/model/Role.java
 src/main/java/dev/parodos/move2kube/client/model/RoleRulesInner.java
 src/main/java/dev/parodos/move2kube/client/model/StartTransformation202Response.java
@@ -119,6 +123,8 @@ src/test/java/dev/parodos/move2kube/client/model/GetPlan200ResponseTest.java
 src/test/java/dev/parodos/move2kube/client/model/GetSupportInfo200ResponseTest.java
 src/test/java/dev/parodos/move2kube/client/model/GetTokens200ResponseTest.java
 src/test/java/dev/parodos/move2kube/client/model/PostAnswerToQuestionRequestTest.java
+src/test/java/dev/parodos/move2kube/client/model/ProjectInputsValueTest.java
+src/test/java/dev/parodos/move2kube/client/model/ProjectStatusTest.java
 src/test/java/dev/parodos/move2kube/client/model/ProjectTest.java
 src/test/java/dev/parodos/move2kube/client/model/RoleRulesInnerTest.java
 src/test/java/dev/parodos/move2kube/client/model/RoleTest.java

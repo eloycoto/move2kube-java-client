@@ -20,12 +20,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import dev.parodos.move2kube.client.model.ProjectInputsValue;
-import dev.parodos.move2kube.client.model.ProjectStatus;
 import java.io.IOException;
 import java.time.OffsetDateTime;
-import java.util.HashMap;
-import java.util.Map;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -53,10 +49,10 @@ import java.util.Set;
 import dev.parodos.move2kube.JSON;
 
 /**
- * Project
+ * ProjectInputsValue
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-09T11:43:40.367106Z[Etc/UTC]")
-public class Project {
+public class ProjectInputsValue {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   private String id;
@@ -65,36 +61,36 @@ public class Project {
   @SerializedName(SERIALIZED_NAME_NAME)
   private String name;
 
-  public static final String SERIALIZED_NAME_TIMESTAMP = "timestamp";
-  @SerializedName(SERIALIZED_NAME_TIMESTAMP)
-  private OffsetDateTime timestamp;
-
-  public static final String SERIALIZED_NAME_STATUS = "status";
-  @SerializedName(SERIALIZED_NAME_STATUS)
-  private ProjectStatus status;
-
-  public static final String SERIALIZED_NAME_INPUTS = "inputs";
-  @SerializedName(SERIALIZED_NAME_INPUTS)
-  private Map<String, ProjectInputsValue> inputs = new HashMap<>();
-
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
   private String description;
 
-  public Project() {
+  public static final String SERIALIZED_NAME_TIMESTAMP = "timestamp";
+  @SerializedName(SERIALIZED_NAME_TIMESTAMP)
+  private OffsetDateTime timestamp;
+
+  public static final String SERIALIZED_NAME_TYPE = "type";
+  @SerializedName(SERIALIZED_NAME_TYPE)
+  private String type;
+
+  public static final String SERIALIZED_NAME_NORMALIZED_NAME = "normalized_name";
+  @SerializedName(SERIALIZED_NAME_NORMALIZED_NAME)
+  private String normalizedName;
+
+  public ProjectInputsValue() {
   }
 
-  public Project id(String id) {
+  public ProjectInputsValue id(String id) {
     
     this.id = id;
     return this;
   }
 
    /**
-   * A unique ID.
+   * Get id
    * @return id
   **/
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
 
   public String getId() {
     return id;
@@ -106,17 +102,17 @@ public class Project {
   }
 
 
-  public Project name(String name) {
+  public ProjectInputsValue name(String name) {
     
     this.name = name;
     return this;
   }
 
    /**
-   * A human readable name for the project.
+   * Get name
    * @return name
   **/
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
 
   public String getName() {
     return name;
@@ -128,7 +124,29 @@ public class Project {
   }
 
 
-  public Project timestamp(OffsetDateTime timestamp) {
+  public ProjectInputsValue description(String description) {
+    
+    this.description = description;
+    return this;
+  }
+
+   /**
+   * Get description
+   * @return description
+  **/
+  @javax.annotation.Nullable
+
+  public String getDescription() {
+    return description;
+  }
+
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+
+  public ProjectInputsValue timestamp(OffsetDateTime timestamp) {
     
     this.timestamp = timestamp;
     return this;
@@ -150,77 +168,47 @@ public class Project {
   }
 
 
-  public Project status(ProjectStatus status) {
+  public ProjectInputsValue type(String type) {
     
-    this.status = status;
+    this.type = type;
     return this;
   }
 
    /**
-   * Get status
-   * @return status
+   * Get type
+   * @return type
   **/
   @javax.annotation.Nullable
 
-  public ProjectStatus getStatus() {
-    return status;
+  public String getType() {
+    return type;
   }
 
 
-  public void setStatus(ProjectStatus status) {
-    this.status = status;
+  public void setType(String type) {
+    this.type = type;
   }
 
 
-  public Project inputs(Map<String, ProjectInputsValue> inputs) {
+  public ProjectInputsValue normalizedName(String normalizedName) {
     
-    this.inputs = inputs;
-    return this;
-  }
-
-  public Project putInputsItem(String key, ProjectInputsValue inputsItem) {
-    if (this.inputs == null) {
-      this.inputs = new HashMap<>();
-    }
-    this.inputs.put(key, inputsItem);
+    this.normalizedName = normalizedName;
     return this;
   }
 
    /**
-   * Get inputs
-   * @return inputs
+   * Get normalizedName
+   * @return normalizedName
   **/
   @javax.annotation.Nullable
 
-  public Map<String, ProjectInputsValue> getInputs() {
-    return inputs;
+  public String getNormalizedName() {
+    return normalizedName;
   }
 
 
-  public void setInputs(Map<String, ProjectInputsValue> inputs) {
-    this.inputs = inputs;
-  }
-
-
-  public Project description(String description) {
-    
-    this.description = description;
-    return this;
-  }
-
-   /**
-   * A description about the project.
-   * @return description
-  **/
-  @javax.annotation.Nullable
-
-  public String getDescription() {
-    return description;
-  }
-
-
-  public void setDescription(String description) {
-    this.description = description;
+  public void setNormalizedName(String normalizedName) {
+    this.normalizedName = normalizedName;
   }
 
 
@@ -233,30 +221,30 @@ public class Project {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    Project project = (Project) o;
-    return Objects.equals(this.id, project.id) &&
-        Objects.equals(this.name, project.name) &&
-        Objects.equals(this.timestamp, project.timestamp) &&
-        Objects.equals(this.status, project.status) &&
-        Objects.equals(this.inputs, project.inputs) &&
-        Objects.equals(this.description, project.description);
+    ProjectInputsValue projectInputsValue = (ProjectInputsValue) o;
+    return Objects.equals(this.id, projectInputsValue.id) &&
+        Objects.equals(this.name, projectInputsValue.name) &&
+        Objects.equals(this.description, projectInputsValue.description) &&
+        Objects.equals(this.timestamp, projectInputsValue.timestamp) &&
+        Objects.equals(this.type, projectInputsValue.type) &&
+        Objects.equals(this.normalizedName, projectInputsValue.normalizedName);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, timestamp, status, inputs, description);
+    return Objects.hash(id, name, description, timestamp, type, normalizedName);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class Project {\n");
+    sb.append("class ProjectInputsValue {\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
-    sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    inputs: ").append(toIndentedString(inputs)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    normalizedName: ").append(toIndentedString(normalizedName)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -281,56 +269,49 @@ public class Project {
     openapiFields = new HashSet<String>();
     openapiFields.add("id");
     openapiFields.add("name");
-    openapiFields.add("timestamp");
-    openapiFields.add("status");
-    openapiFields.add("inputs");
     openapiFields.add("description");
+    openapiFields.add("timestamp");
+    openapiFields.add("type");
+    openapiFields.add("normalized_name");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("id");
-    openapiRequiredFields.add("name");
   }
 
  /**
   * Validates the JSON Object and throws an exception if issues found
   *
   * @param jsonObj JSON Object
-  * @throws IOException if the JSON Object is invalid with respect to Project
+  * @throws IOException if the JSON Object is invalid with respect to ProjectInputsValue
   */
   public static void validateJsonObject(JsonObject jsonObj) throws IOException {
       if (jsonObj == null) {
-        if (!Project.openapiRequiredFields.isEmpty()) { // has required fields but JSON object is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in Project is not found in the empty JSON string", Project.openapiRequiredFields.toString()));
+        if (!ProjectInputsValue.openapiRequiredFields.isEmpty()) { // has required fields but JSON object is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in ProjectInputsValue is not found in the empty JSON string", ProjectInputsValue.openapiRequiredFields.toString()));
         }
       }
 
       Set<Entry<String, JsonElement>> entries = jsonObj.entrySet();
       // check to see if the JSON string contains additional fields
       for (Entry<String, JsonElement> entry : entries) {
-        if (!Project.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `Project` properties. JSON: %s", entry.getKey(), jsonObj.toString()));
+        if (!ProjectInputsValue.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ProjectInputsValue` properties. JSON: %s", entry.getKey(), jsonObj.toString()));
         }
       }
-
-      // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : Project.openapiRequiredFields) {
-        if (jsonObj.get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonObj.toString()));
-        }
-      }
-      if (!jsonObj.get("id").isJsonPrimitive()) {
+      if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
       }
-      if (!jsonObj.get("name").isJsonPrimitive()) {
+      if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
-      }
-      // validate the optional field `status`
-      if (jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) {
-        ProjectStatus.validateJsonObject(jsonObj.getAsJsonObject("status"));
       }
       if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
+      }
+      if ((jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) && !jsonObj.get("type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
+      }
+      if ((jsonObj.get("normalized_name") != null && !jsonObj.get("normalized_name").isJsonNull()) && !jsonObj.get("normalized_name").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `normalized_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("normalized_name").toString()));
       }
   }
 
@@ -338,22 +319,22 @@ public class Project {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!Project.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'Project' and its subtypes
+       if (!ProjectInputsValue.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'ProjectInputsValue' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<Project> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(Project.class));
+       final TypeAdapter<ProjectInputsValue> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(ProjectInputsValue.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<Project>() {
+       return (TypeAdapter<T>) new TypeAdapter<ProjectInputsValue>() {
            @Override
-           public void write(JsonWriter out, Project value) throws IOException {
+           public void write(JsonWriter out, ProjectInputsValue value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public Project read(JsonReader in) throws IOException {
+           public ProjectInputsValue read(JsonReader in) throws IOException {
              JsonObject jsonObj = elementAdapter.read(in).getAsJsonObject();
              validateJsonObject(jsonObj);
              return thisAdapter.fromJsonTree(jsonObj);
@@ -364,18 +345,18 @@ public class Project {
   }
 
  /**
-  * Create an instance of Project given an JSON string
+  * Create an instance of ProjectInputsValue given an JSON string
   *
   * @param jsonString JSON string
-  * @return An instance of Project
-  * @throws IOException if the JSON string is invalid with respect to Project
+  * @return An instance of ProjectInputsValue
+  * @throws IOException if the JSON string is invalid with respect to ProjectInputsValue
   */
-  public static Project fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, Project.class);
+  public static ProjectInputsValue fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, ProjectInputsValue.class);
   }
 
  /**
-  * Convert an instance of Project to an JSON string
+  * Convert an instance of ProjectInputsValue to an JSON string
   *
   * @return JSON string
   */
