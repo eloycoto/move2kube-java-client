@@ -1,8 +1,8 @@
-# openapi-java-client
+# move2kube
 
 Move2Kube API
 - API version: v1.0.0
-  - Build date: 2023-05-09T11:43:40.367106Z[Etc/UTC]
+  - Build date: 2023-05-09T14:50:27.497398Z[Etc/UTC]
 
 This is a documentation of the Move2Kube REST API.
 All API calls expect the `Authorization: Bearer <access-token>` HTTP header unless specified otherwise.
@@ -41,8 +41,8 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
-  <artifactId>openapi-java-client</artifactId>
+  <groupId>parodos.dev</groupId>
+  <artifactId>move2kube</artifactId>
   <version>v1.0.0</version>
   <scope>compile</scope>
 </dependency>
@@ -54,12 +54,12 @@ Add this dependency to your project's build file:
 
 ```groovy
   repositories {
-    mavenCentral()     // Needed if the 'openapi-java-client' jar has been published to maven central.
-    mavenLocal()       // Needed if the 'openapi-java-client' jar has been published to the local maven repo.
+    mavenCentral()     // Needed if the 'move2kube' jar has been published to maven central.
+    mavenLocal()       // Needed if the 'move2kube' jar has been published to the local maven repo.
   }
 
   dependencies {
-     implementation "org.openapitools:openapi-java-client:v1.0.0"
+     implementation "parodos.dev:move2kube:v1.0.0"
   }
 ```
 
@@ -73,7 +73,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/openapi-java-client-v1.0.0.jar`
+* `target/move2kube-v1.0.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started

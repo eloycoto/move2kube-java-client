@@ -1,1 +1,19 @@
 # Move2kube api client
+
+## Generate
+
+```
+make generate
+```
+
+
+## Deploy
+
+
+```
+cd java-client
+mvn deploy \
+    -DaltDeploymentRepository=ossrh::default::https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
+```
+
+The ~/.m2/settings.xml as the parodos project.
