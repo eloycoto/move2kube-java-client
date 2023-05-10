@@ -1,6 +1,6 @@
 lazy val root = (project in file(".")).
   settings(
-    organization := "parodos.dev",
+    organization := "dev.parodos",
     name := "move2kube",
     version := "v1.0.0",
     scalaVersion := "2.11.4",

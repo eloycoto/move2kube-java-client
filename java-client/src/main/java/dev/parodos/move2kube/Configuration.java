@@ -13,7 +13,7 @@
 
 package dev.parodos.move2kube;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-09T14:50:27.497398Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-10T08:08:49.239790Z[Etc/UTC]")
 public class Configuration {
     public static final String VERSION = "v1.0.0";
 

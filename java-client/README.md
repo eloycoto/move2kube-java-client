@@ -2,7 +2,7 @@
 
 Move2Kube API
 - API version: v1.0.0
-  - Build date: 2023-05-09T14:50:27.497398Z[Etc/UTC]
+  - Build date: 2023-05-10T08:08:49.239790Z[Etc/UTC]
 
 This is a documentation of the Move2Kube REST API.
 All API calls expect the `Authorization: Bearer <access-token>` HTTP header unless specified otherwise.
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>parodos.dev</groupId>
+  <groupId>dev.parodos</groupId>
   <artifactId>move2kube</artifactId>
   <version>v1.0.0</version>
   <scope>compile</scope>
@@ -59,7 +59,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "parodos.dev:move2kube:v1.0.0"
+     implementation "dev.parodos:move2kube:v1.0.0"
   }
 ```
 

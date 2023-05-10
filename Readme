@@ -12,7 +12,7 @@ make generate
 
 ```
 cd java-client
-mvn deploy \
+mvn deploy -P sign-artifacts \
     -DaltDeploymentRepository=ossrh::default::https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
 ```
 
