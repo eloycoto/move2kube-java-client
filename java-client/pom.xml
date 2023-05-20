@@ -5,7 +5,7 @@
     <artifactId>move2kube</artifactId>
     <packaging>jar</packaging>
     <name>move2kube</name>
-    <version>v1.0.0</version>
+    <version>1.0.1</version>
     <url>https://github.com/openapitools/openapi-generator</url>
     <description>OpenAPI Java</description>
     <scm>

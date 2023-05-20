@@ -50,7 +50,7 @@ import dev.parodos.move2kube.JSON;
 /**
  * UpdatePlanRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-20T19:16:20.666809Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-20T19:18:41.877870Z[Etc/UTC]")
 public class UpdatePlanRequest {
   public static final String SERIALIZED_NAME_PLAN = "plan";
   @SerializedName(SERIALIZED_NAME_PLAN)

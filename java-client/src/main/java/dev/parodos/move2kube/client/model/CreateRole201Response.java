@@ -50,7 +50,7 @@ import dev.parodos.move2kube.JSON;
 /**
  * CreateRole201Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-20T19:16:20.666809Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-20T19:18:41.877870Z[Etc/UTC]")
 public class CreateRole201Response {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
