@@ -2223,12 +2223,24 @@ components:
       type: object
     start_transformation_202_response:
       example:
+        name: name
+        description: description
         id: proj-output-1234
+        timestamp: 2000-01-23T04:56:07.000+00:00
         status: transforming
       properties:
         id:
           description: ID of the new project output.
           example: proj-output-1234
+          type: string
+        name:
+          description: Name of the project output.
+          type: string
+        description:
+          description: Description of the project output.
+          type: string
+        timestamp:
+          format: date-time
           type: string
         status:
           description: The status of the transformation.

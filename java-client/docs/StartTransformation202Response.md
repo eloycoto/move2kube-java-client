@@ -8,6 +8,9 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**id** | **String** | ID of the new project output. |  [optional] |
+|**name** | **String** | Name of the project output. |  [optional] |
+|**description** | **String** | Description of the project output. |  [optional] |
+|**timestamp** | **OffsetDateTime** |  |  [optional] |
 |**status** | [**StatusEnum**](#StatusEnum) | The status of the transformation. |  [optional] |
 
 

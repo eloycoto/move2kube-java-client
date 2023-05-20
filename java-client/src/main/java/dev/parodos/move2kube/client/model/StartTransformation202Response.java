@@ -21,6 +21,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.time.OffsetDateTime;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,11 +51,23 @@ import dev.parodos.move2kube.JSON;
 /**
  * StartTransformation202Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-10T08:08:49.239790Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-20T19:16:20.666809Z[Etc/UTC]")
 public class StartTransformation202Response {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   private String id;
+
+  public static final String SERIALIZED_NAME_NAME = "name";
+  @SerializedName(SERIALIZED_NAME_NAME)
+  private String name;
+
+  public static final String SERIALIZED_NAME_DESCRIPTION = "description";
+  @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  private String description;
+
+  public static final String SERIALIZED_NAME_TIMESTAMP = "timestamp";
+  @SerializedName(SERIALIZED_NAME_TIMESTAMP)
+  private OffsetDateTime timestamp;
 
   /**
    * The status of the transformation.
@@ -134,6 +147,72 @@ public class StartTransformation202Response {
   }
 
 
+  public StartTransformation202Response name(String name) {
+    
+    this.name = name;
+    return this;
+  }
+
+   /**
+   * Name of the project output.
+   * @return name
+  **/
+  @javax.annotation.Nullable
+
+  public String getName() {
+    return name;
+  }
+
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+
+  public StartTransformation202Response description(String description) {
+    
+    this.description = description;
+    return this;
+  }
+
+   /**
+   * Description of the project output.
+   * @return description
+  **/
+  @javax.annotation.Nullable
+
+  public String getDescription() {
+    return description;
+  }
+
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+
+  public StartTransformation202Response timestamp(OffsetDateTime timestamp) {
+    
+    this.timestamp = timestamp;
+    return this;
+  }
+
+   /**
+   * Get timestamp
+   * @return timestamp
+  **/
+  @javax.annotation.Nullable
+
+  public OffsetDateTime getTimestamp() {
+    return timestamp;
+  }
+
+
+  public void setTimestamp(OffsetDateTime timestamp) {
+    this.timestamp = timestamp;
+  }
+
+
   public StartTransformation202Response status(StatusEnum status) {
     
     this.status = status;
@@ -167,12 +246,15 @@ public class StartTransformation202Response {
     }
     StartTransformation202Response startTransformation202Response = (StartTransformation202Response) o;
     return Objects.equals(this.id, startTransformation202Response.id) &&
+        Objects.equals(this.name, startTransformation202Response.name) &&
+        Objects.equals(this.description, startTransformation202Response.description) &&
+        Objects.equals(this.timestamp, startTransformation202Response.timestamp) &&
         Objects.equals(this.status, startTransformation202Response.status);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, status);
+    return Objects.hash(id, name, description, timestamp, status);
   }
 
   @Override
@@ -180,6 +262,9 @@ public class StartTransformation202Response {
     StringBuilder sb = new StringBuilder();
     sb.append("class StartTransformation202Response {\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -204,6 +289,9 @@ public class StartTransformation202Response {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("id");
+    openapiFields.add("name");
+    openapiFields.add("description");
+    openapiFields.add("timestamp");
     openapiFields.add("status");
 
     // a set of required properties/fields (JSON key names)
@@ -232,6 +320,12 @@ public class StartTransformation202Response {
       }
       if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
+      }
+      if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+      }
+      if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
       }
       if ((jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) && !jsonObj.get("status").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
