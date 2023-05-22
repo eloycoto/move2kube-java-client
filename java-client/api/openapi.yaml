@@ -1861,6 +1861,13 @@ components:
       type: object
     Project:
       example:
+        outputs:
+          key:
+            name: name
+            description: description
+            id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            timestamp: 2000-01-23T04:56:07.000+00:00
+            status: status
         inputs:
           key:
             name: name
@@ -1893,6 +1900,10 @@ components:
         timestamp:
           format: date-time
           type: string
+        outputs:
+          additionalProperties:
+            $ref: '#/components/schemas/Project_outputs_value'
+          type: object
         status:
           $ref: '#/components/schemas/Project_status'
         inputs:
@@ -1910,7 +1921,14 @@ components:
     Workspace:
       example:
         projects:
-        - inputs:
+        - outputs:
+            key:
+              name: name
+              description: description
+              id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+              timestamp: 2000-01-23T04:56:07.000+00:00
+              status: status
+          inputs:
             key:
               name: name
               description: description
@@ -1928,7 +1946,14 @@ components:
             plan_error: true
             stale_plan: true
             plan: true
-        - inputs:
+        - outputs:
+            key:
+              name: name
+              description: description
+              id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+              timestamp: 2000-01-23T04:56:07.000+00:00
+              status: status
+          inputs:
             key:
               name: name
               description: description
@@ -2281,6 +2306,27 @@ components:
           type: string
       required:
       - description
+      type: object
+    Project_outputs_value:
+      example:
+        name: name
+        description: description
+        id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+        timestamp: 2000-01-23T04:56:07.000+00:00
+        status: status
+      properties:
+        id:
+          format: uuid
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        timestamp:
+          format: date-time
+          type: string
+        status:
+          type: string
       type: object
     Project_status:
       example:

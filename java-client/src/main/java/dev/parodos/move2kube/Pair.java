@@ -13,7 +13,7 @@
 
 package dev.parodos.move2kube;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-20T19:18:41.877870Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-22T10:14:14.936060Z[Etc/UTC]")
 public class Pair {
     private String name = "";
     private String value = "";

@@ -21,6 +21,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import dev.parodos.move2kube.client.model.ProjectInputsValue;
+import dev.parodos.move2kube.client.model.ProjectOutputsValue;
 import dev.parodos.move2kube.client.model.ProjectStatus;
 import java.io.IOException;
 import java.time.OffsetDateTime;
@@ -55,7 +56,7 @@ import dev.parodos.move2kube.JSON;
 /**
  * Project
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-20T19:18:41.877870Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-22T10:14:14.936060Z[Etc/UTC]")
 public class Project {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -68,6 +69,10 @@ public class Project {
   public static final String SERIALIZED_NAME_TIMESTAMP = "timestamp";
   @SerializedName(SERIALIZED_NAME_TIMESTAMP)
   private OffsetDateTime timestamp;
+
+  public static final String SERIALIZED_NAME_OUTPUTS = "outputs";
+  @SerializedName(SERIALIZED_NAME_OUTPUTS)
+  private Map<String, ProjectOutputsValue> outputs = new HashMap<>();
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
@@ -147,6 +152,36 @@ public class Project {
 
   public void setTimestamp(OffsetDateTime timestamp) {
     this.timestamp = timestamp;
+  }
+
+
+  public Project outputs(Map<String, ProjectOutputsValue> outputs) {
+    
+    this.outputs = outputs;
+    return this;
+  }
+
+  public Project putOutputsItem(String key, ProjectOutputsValue outputsItem) {
+    if (this.outputs == null) {
+      this.outputs = new HashMap<>();
+    }
+    this.outputs.put(key, outputsItem);
+    return this;
+  }
+
+   /**
+   * Get outputs
+   * @return outputs
+  **/
+  @javax.annotation.Nullable
+
+  public Map<String, ProjectOutputsValue> getOutputs() {
+    return outputs;
+  }
+
+
+  public void setOutputs(Map<String, ProjectOutputsValue> outputs) {
+    this.outputs = outputs;
   }
 
 
@@ -237,6 +272,7 @@ public class Project {
     return Objects.equals(this.id, project.id) &&
         Objects.equals(this.name, project.name) &&
         Objects.equals(this.timestamp, project.timestamp) &&
+        Objects.equals(this.outputs, project.outputs) &&
         Objects.equals(this.status, project.status) &&
         Objects.equals(this.inputs, project.inputs) &&
         Objects.equals(this.description, project.description);
@@ -244,7 +280,7 @@ public class Project {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, timestamp, status, inputs, description);
+    return Objects.hash(id, name, timestamp, outputs, status, inputs, description);
   }
 
   @Override
@@ -254,6 +290,7 @@ public class Project {
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
+    sb.append("    outputs: ").append(toIndentedString(outputs)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    inputs: ").append(toIndentedString(inputs)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
@@ -282,6 +319,7 @@ public class Project {
     openapiFields.add("id");
     openapiFields.add("name");
     openapiFields.add("timestamp");
+    openapiFields.add("outputs");
     openapiFields.add("status");
     openapiFields.add("inputs");
     openapiFields.add("description");

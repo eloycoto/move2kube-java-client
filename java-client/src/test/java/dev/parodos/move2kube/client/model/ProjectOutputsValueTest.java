@@ -18,29 +18,25 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import dev.parodos.move2kube.client.model.ProjectInputsValue;
-import dev.parodos.move2kube.client.model.ProjectOutputsValue;
-import dev.parodos.move2kube.client.model.ProjectStatus;
 import java.io.IOException;
 import java.time.OffsetDateTime;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.UUID;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 
 /**
- * Model tests for Project
+ * Model tests for ProjectOutputsValue
  */
-public class ProjectTest {
-    private final Project model = new Project();
+public class ProjectOutputsValueTest {
+    private final ProjectOutputsValue model = new ProjectOutputsValue();
 
     /**
-     * Model tests for Project
+     * Model tests for ProjectOutputsValue
      */
     @Test
-    public void testProject() {
-        // TODO: test Project
+    public void testProjectOutputsValue() {
+        // TODO: test ProjectOutputsValue
     }
 
     /**
@@ -60,6 +56,14 @@ public class ProjectTest {
     }
 
     /**
+     * Test the property 'description'
+     */
+    @Test
+    public void descriptionTest() {
+        // TODO: test description
+    }
+
+    /**
      * Test the property 'timestamp'
      */
     @Test
@@ -68,35 +72,11 @@ public class ProjectTest {
     }
 
     /**
-     * Test the property 'outputs'
-     */
-    @Test
-    public void outputsTest() {
-        // TODO: test outputs
-    }
-
-    /**
      * Test the property 'status'
      */
     @Test
     public void statusTest() {
         // TODO: test status
-    }
-
-    /**
-     * Test the property 'inputs'
-     */
-    @Test
-    public void inputsTest() {
-        // TODO: test inputs
-    }
-
-    /**
-     * Test the property 'description'
-     */
-    @Test
-    public void descriptionTest() {
-        // TODO: test description
     }
 
 }
