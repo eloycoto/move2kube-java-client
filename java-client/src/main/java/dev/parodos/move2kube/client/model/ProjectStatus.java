@@ -50,7 +50,7 @@ import dev.parodos.move2kube.JSON;
 /**
  * ProjectStatus
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-22T10:14:14.936060Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-05-22T11:27:27.317823Z[Etc/UTC]")
 public class ProjectStatus {
   public static final String SERIALIZED_NAME_PLAN = "plan";
   @SerializedName(SERIALIZED_NAME_PLAN)
@@ -71,6 +71,14 @@ public class ProjectStatus {
   public static final String SERIALIZED_NAME_STALE_PLAN = "stale_plan";
   @SerializedName(SERIALIZED_NAME_STALE_PLAN)
   private Boolean stalePlan;
+
+  public static final String SERIALIZED_NAME_SOURCES = "sources";
+  @SerializedName(SERIALIZED_NAME_SOURCES)
+  private Boolean sources;
+
+  public static final String SERIALIZED_NAME_OUTPUTS = "outputs";
+  @SerializedName(SERIALIZED_NAME_OUTPUTS)
+  private Boolean outputs;
 
   public ProjectStatus() {
   }
@@ -185,6 +193,50 @@ public class ProjectStatus {
   }
 
 
+  public ProjectStatus sources(Boolean sources) {
+    
+    this.sources = sources;
+    return this;
+  }
+
+   /**
+   * Get sources
+   * @return sources
+  **/
+  @javax.annotation.Nullable
+
+  public Boolean getSources() {
+    return sources;
+  }
+
+
+  public void setSources(Boolean sources) {
+    this.sources = sources;
+  }
+
+
+  public ProjectStatus outputs(Boolean outputs) {
+    
+    this.outputs = outputs;
+    return this;
+  }
+
+   /**
+   * Get outputs
+   * @return outputs
+  **/
+  @javax.annotation.Nullable
+
+  public Boolean getOutputs() {
+    return outputs;
+  }
+
+
+  public void setOutputs(Boolean outputs) {
+    this.outputs = outputs;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -199,12 +251,14 @@ public class ProjectStatus {
         Objects.equals(this.planError, projectStatus.planError) &&
         Objects.equals(this.planning, projectStatus.planning) &&
         Objects.equals(this.reference, projectStatus.reference) &&
-        Objects.equals(this.stalePlan, projectStatus.stalePlan);
+        Objects.equals(this.stalePlan, projectStatus.stalePlan) &&
+        Objects.equals(this.sources, projectStatus.sources) &&
+        Objects.equals(this.outputs, projectStatus.outputs);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(plan, planError, planning, reference, stalePlan);
+    return Objects.hash(plan, planError, planning, reference, stalePlan, sources, outputs);
   }
 
   @Override
@@ -216,6 +270,8 @@ public class ProjectStatus {
     sb.append("    planning: ").append(toIndentedString(planning)).append("\n");
     sb.append("    reference: ").append(toIndentedString(reference)).append("\n");
     sb.append("    stalePlan: ").append(toIndentedString(stalePlan)).append("\n");
+    sb.append("    sources: ").append(toIndentedString(sources)).append("\n");
+    sb.append("    outputs: ").append(toIndentedString(outputs)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -243,6 +299,8 @@ public class ProjectStatus {
     openapiFields.add("planning");
     openapiFields.add("reference");
     openapiFields.add("stale_plan");
+    openapiFields.add("sources");
+    openapiFields.add("outputs");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

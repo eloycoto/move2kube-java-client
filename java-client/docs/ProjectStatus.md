@@ -12,6 +12,8 @@
 |**planning** | **Boolean** |  |  [optional] |
 |**reference** | **Boolean** |  |  [optional] |
 |**stalePlan** | **Boolean** |  |  [optional] |
+|**sources** | **Boolean** |  |  [optional] |
+|**outputs** | **Boolean** |  |  [optional] |
 
 
 

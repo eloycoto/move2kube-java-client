@@ -1882,9 +1882,11 @@ components:
         timestamp: 2000-01-23T04:56:07.000+00:00
         status:
           reference: true
+          outputs: true
           planning: true
           plan_error: true
           stale_plan: true
+          sources: true
           plan: true
       properties:
         id:
@@ -1942,9 +1944,11 @@ components:
           timestamp: 2000-01-23T04:56:07.000+00:00
           status:
             reference: true
+            outputs: true
             planning: true
             plan_error: true
             stale_plan: true
+            sources: true
             plan: true
         - outputs:
             key:
@@ -1967,9 +1971,11 @@ components:
           timestamp: 2000-01-23T04:56:07.000+00:00
           status:
             reference: true
+            outputs: true
             planning: true
             plan_error: true
             stale_plan: true
+            sources: true
             plan: true
         inputs:
           key:
@@ -2331,9 +2337,11 @@ components:
     Project_status:
       example:
         reference: true
+        outputs: true
         planning: true
         plan_error: true
         stale_plan: true
+        sources: true
         plan: true
       properties:
         plan:
@@ -2345,6 +2353,10 @@ components:
         reference:
           type: boolean
         stale_plan:
+          type: boolean
+        sources:
+          type: boolean
+        outputs:
           type: boolean
       type: object
     Project_inputs_value:

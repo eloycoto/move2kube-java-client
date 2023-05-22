@@ -77,4 +77,20 @@ public class ProjectStatusTest {
         // TODO: test stalePlan
     }
 
+    /**
+     * Test the property 'sources'
+     */
+    @Test
+    public void sourcesTest() {
+        // TODO: test sources
+    }
+
+    /**
+     * Test the property 'outputs'
+     */
+    @Test
+    public void outputsTest() {
+        // TODO: test outputs
+    }
+
 }

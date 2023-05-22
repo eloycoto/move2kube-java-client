@@ -1,6 +1,6 @@
 USER=$(shell id -u $(shell whoami))
 GROUP=$(shell id -g $(shell whoami))
-VERSION="1.0.2"
+VERSION="1.0.3"
 
 
 download-openapi:
